@@ -5,7 +5,7 @@ It allows you to create, manage, and display blog posts in a beautiful and respo
 You can run this app locally and use it as a starting point for your blogging project.
 
 # LIVE PREVIEW:
-https://myliveblog.vercel.app/blog/1
+https://myliveblog.vercel.app/
 
 # Features:
 
