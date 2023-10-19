@@ -11,7 +11,7 @@ const BlogContent = ({ blog }) => {
     return <div>Blog not found.</div>;
   }
 
-  const markdownFile = `/src/markdown/blog-${id}.md`;
+  const markdownFile = `/markdown/blog-${id}.md`;
   const markdownContent = useMarkdownLoader(markdownFile);
 
   return (
