@@ -24,6 +24,16 @@ const BlogContent = ({ blog }) => {
           >
             {markdownContent}
           </ReactMarkdown>
+          <div className="flex flex-col items-center max-w-[500px] mx-auto px-8 py-6 bg-slate-800 rounded-2xl mt-16">
+            <img
+              className="w-16 h-16 rounded-full mb-2"
+              src={selectedBlog.authorProfileImg}
+              alt={selectedBlog.author}
+            />
+            <p className="text-gray-300 py-2 overflow-hidden">Written by:</p>
+            <div className="text-gray-300">{selectedBlog.author}</div>
+            <div className="text-gray-300 mt-2">{selectedBlog.date}</div>
+          </div>
         </div>
       </div>
     </div>
