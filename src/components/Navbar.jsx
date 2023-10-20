@@ -10,7 +10,7 @@ const Navbar = () => {
     const handleClick = () => setToggle(!toggle);
 
     return (
-        <div className='w-full h-[100px] m-auto z-10 fixed'>
+        <div className='w-full h-[100px] m-auto z-10 opacity-100 fixed'>
 
             <div className=" mx-auto p-5 md:px-6  flex justify-between items-center md:max-w-[1340px]  dark:bg-slate-800 drop-shadow-lg">
                 <div className="flex items-center">
