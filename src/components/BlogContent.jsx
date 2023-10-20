@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import useMarkdownLoader from '../utilities/useMarkdownLoader';
 import  '../custom.css';
+import { Helmet } from 'react-helmet-async';
+
 
 const BlogContent = ({ blog }) => {
   const { id } = useParams();
@@ -11,12 +13,28 @@ const BlogContent = ({ blog }) => {
   if (!selectedBlog) {
     return <div>Blog not found.</div>;
   }
+  // Metadata for Open Graph and Twitter Cards
+  const pageTitle = selectedBlog.title;
+  const pageDescription = selectedBlog.desc;
+  const pageImageUrl = selectedBlog.coverImg;
 
+  //Markdown
   const markdownFile = `/markdown/blog-${id}.md`;
   const markdownContent = useMarkdownLoader(markdownFile);
 
   return (
     <div className="w-full py-16 px-8 relative bg-gray-800">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content={pageImageUrl} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content={pageImageUrl} />
+      </Helmet>
       <div className="max-w-[1340px] mx-auto px-1 pt-24">
         <div className="flex flex-col items-center">
           <img className='lg:max-w-[800px] sm:max-w-[600px] ss:min-w-[200px]  lg:px-2 py-4' src={selectedBlog.coverImg} alt={selectedBlog.title} />
