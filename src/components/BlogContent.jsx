@@ -2,7 +2,7 @@
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import useMarkdownLoader from '../utilities/useMarkdownLoader';
-import  '../markdowncustom.css';
+import  '../custom.css';
 
 const BlogContent = ({ blog }) => {
   const { id } = useParams();

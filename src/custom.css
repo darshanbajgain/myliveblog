@@ -1,6 +1,12 @@
-
+/* this for for markdown hyperlink text */
 .custom-prose-links a {
     color: rgb(125, 199, 219);
     text-decoration: underline;
   }
   
+.navbar {
+  background-color: #333; 
+}
+
+
+
