@@ -33,7 +33,7 @@ const AboutContent = () => {
                 <a href="https://www.linkedin.com/in/darshanbajgain/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin size={32} className="text-white mr-4 hover:text-slate-400" />
                 </a>
-                <a href="https://github.com/darshanbajgai" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/darshanbajgain" target="_blank" rel="noopener noreferrer">
                     <FaGithub size={32} className="text-white mr-4 hover-text-slate-400" />
                 </a>
                 <a href="https://twitter.com/thearshanbajgain" target="_blank" rel="noopener noreferrer">
