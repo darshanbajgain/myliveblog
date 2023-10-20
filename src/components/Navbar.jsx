@@ -35,7 +35,7 @@ const Navbar = () => {
 
             </div>
 
-            <ul className={toggle ? "md:hidden px-8 py-10 drop-shadow-lg absolute flex flex-col items-center dark:bg-slate-800 w-full uppercase text-slate-300 font-bold" : "hidden"}>
+            <ul className={toggle ? "md:hidden px-8 py-10 drop-shadow-lg absolute flex flex-col items-center navbar w-full uppercase text-slate-300 font-bold" : "hidden"}>
 
                 <Link to='/' className="p-3 hover:text-gray-400">Home</Link>
                 <Link to='/posts' className="p-3 hover:text-gray-400">Post</Link>

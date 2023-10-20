@@ -2,12 +2,14 @@ import React from 'react';
 import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 import {  HiGlobe } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
+import  '../custom.css';
+
 
 
 const Footer = () => {
   return (
-    <div className='w-full dark:bg-gray-800 text-gray-300'>
-      <div className='max-w-[1340px]  dark:bg-slate-800 mx-auto my-0 px-4 sm:px-6  drop-shadow-xl shadow-inner'>
+    <div className='w-full home text-gray-300'>
+      <div className='max-w-[1340px] footer mx-auto my-0 px-4 sm:px-6  drop-shadow-xl shadow-inner'>
         <div className=' py-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 text-center'>
           {/* Footer Column 1 */}
           <div>
