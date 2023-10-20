@@ -69,6 +69,7 @@ const BlogContent = ({ blog }) => {
 export default BlogContent;
 
 ```
+Check the source [here](https://github.com/darshanbajgain/myliveblog) in my Github.
 
 **3. No CMS or Backend Technology**
 
