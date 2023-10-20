@@ -4,8 +4,8 @@ const AboutContent = () => {
     const profileImageUrl = "https://media.licdn.com/dms/image/D5603AQHiTbxjVI1AEQ/profile-displayphoto-shrink_800_800/0/1682674343890?e=1702512000&v=beta&t=W5e1A2B-E_AynuySpH0nzwKQbxUEY4ogC9swOA1K9ZU";
 
     return (
-        <div className="pt-36 pb-28 container mx-auto">
-            <div className="flex flex-col md:flex-row justify-around text-center py-8 px-4 my-6">
+        <div className="pt-36 pb-28  container mx-auto">
+            <div className="flex flex-col md:flex-row justify-around text-center py-16 px-4 my-6">
                 <div className="w-full md:w-1/2 px-2 my-4">
                     <img
                         src={profileImageUrl}
@@ -14,7 +14,7 @@ const AboutContent = () => {
                     />
                     <h1 className="text-slate-100 text-lg sm:text-xl font-bold mt-4 px-2 uppercase tracking-widest">{'</Dev.Darshan>'}</h1>
                 </div>
-                <div className="w-full md:w-1/2 px-4 py-4 text-gray-200 text-center">
+                <div className="w-full md:w-1/2 px-4 py-10 text-gray-200 text-center">
                     <p>
                         <b className="uppercase text-xl py-2">Hello, </b> <span className="text-xl text-blue-500 py-2 mb-4 font-bold uppercase"> I am Darshan Bajgain.</span>
                     </p>
