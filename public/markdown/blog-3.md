@@ -1,4 +1,4 @@
-## Java-React Fullstack Developer Pathway
+## Java-React Fullstack Developer Pathway (Spring + React)
 
 In the ever-evolving landscape of web development, fullstack developers play a crucial role in creating dynamic and interactive web applications. If you're aspiring to be a proficient fullstack developer, this comprehensive pathway will guide you through the necessary steps to master both Java with a focus on Spring Boot and React, two powerful technologies used in building modern web applications.
 
