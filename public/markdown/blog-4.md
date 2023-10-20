@@ -11,11 +11,64 @@ After facing hosting and deployment challenges with my previous blog, which was 
 
 **1. Markdown Files as Blog Posts**
 
-Instead of relying on a traditional backend and database, I turned to markdown files. Each markdown file served as an individual blog post, containing the content, images, and metadata.
+Instead of relying on a traditional backend and database, I turned to markdown files, which were conveniently placed inside the public directory of my project. I used the **_useMarkdownLoader_** custom hook to load each markdown file and pass its content to the **_BlogContent_** component. This approach allowed each markdown file to serve as an individual blog post, containing the content, images, and metadata.
+![blog-4-1.png](../images/blog-4-1.png)
+
 
 **2. Frontend Rendering**
 
-The core of my dynamic blog resides in the frontend. I designed a React application to render the content from these markdown files. This approach allowed for a seamless and responsive reading experience, with no need for server-side processing.
+The core of my dynamic blog resides in the frontend. I meticulously designed a React application to render the content from these markdown files. To ensure compatibility with hosting platforms like Vercel, the markdown files had to be located in the root directory of the public folder. Additionally, any image assets required for the markdown text within the blog content were stored inside the public folder of the project.
+Here's a code snippet example of the **_useMarkdownLoader_** custom hook:
+
+```jsx
+// useMarkdownLoader.js
+import { useEffect, useState } from 'react';
+
+const useMarkdownLoader = (markdownFile) => {
+  const [markdownContent, setMarkdownContent] = useState('');
+
+  useEffect(() => {
+    const fetchMarkdown = async () => {
+      try {
+        const response = await fetch(markdownFile);
+        const text = await response.text();
+        setMarkdownContent(text);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchMarkdown();
+  }, [markdownFile]);
+
+  return markdownContent;
+};
+
+export default useMarkdownLoader; 
+```
+And here's how the **_useMarkdownLoader_** is integrated into the **_BlogContent_** component:
+
+```jsx
+import { useParams } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import useMarkdownLoader from '../utilities/useMarkdownLoader';
+import '../custom.css';
+
+const BlogContent = ({ blog }) => {
+  // ... (previous code)
+
+  // Using the useMarkdownLoader to load the markdown content
+  const markdownFile = `/markdown/blog-${id}.md`;
+  const markdownContent = useMarkdownLoader(markdownFile);
+
+  return (
+    // ... (previous code)
+  );
+};
+
+export default BlogContent;
+
+```
 
 **3. No CMS or Backend Technology**
 
