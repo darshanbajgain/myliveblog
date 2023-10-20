@@ -10,7 +10,7 @@ const Blogs = ({blog}) => {
 
 
   // Define the IDs of the featured blogs from Strapi
-  const featuredBlogIds = [1, 2]; // Replace with your featured blog IDs
+  const featuredBlogIds = [1, 2, 4]; // Replace with your featured blog IDs
 
   // Filter the featured blogs based on their IDs
   const featuredBlogs = blog.filter((blog) => featuredBlogIds.includes(blog.id));
@@ -27,7 +27,7 @@ const Blogs = ({blog}) => {
 
         <div className='w-full pt-32 lg:mt-16 lg:pt-16 text-center mb-6'>
           <h2 className='lg:text-3xl text-2xl lg:py-4 font-bold text-white mb-4'>Featured Content</h2>
-          <div className='grid ss:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8'>
+          <div className='grid ss:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {featuredBlogs.map((blog) => (
               <FeaturedBlogs key={blog.id} blog={blog} />
             ))}

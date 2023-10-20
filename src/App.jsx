@@ -33,7 +33,15 @@ export default function App() {
       'author': 'Darshan Bajgain',
       'date': 'October 20, 2023',
       'authorProfileImg': 'https://media.licdn.com/dms/image/D5603AQHiTbxjVI1AEQ/profile-displayphoto-shrink_800_800/0/1682674343890?e=1701907200&v=beta&t=0ASP4jhQWmTvpo5NIi96n_Mq_OQHR83mG9_MqbbKNrE'
-
+    },
+    {
+      "id": 4,
+      'title': 'Crafting a Serverless, Database-Free Dynamic Blog: Markdown Magic with React, No Backend, and No Deployment Overhead',
+      'desc': 'Discover a serverless, hassle-free dynamic blog created entirely in the frontend using React and markdown files. Say goodbye to databases, backends, deployment overhead, and hosting fees',
+      'coverImg': '../images/blog-4.png',
+      'author': 'Darshan Bajgain',
+      'date': 'October 20, 2023',
+      'authorProfileImg': 'https://media.licdn.com/dms/image/D5603AQHiTbxjVI1AEQ/profile-displayphoto-shrink_800_800/0/1682674343890?e=1701907200&v=beta&t=0ASP4jhQWmTvpo5NIi96n_Mq_OQHR83mG9_MqbbKNrE'
     },
 
   ]
