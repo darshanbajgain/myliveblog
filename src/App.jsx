@@ -1,7 +1,7 @@
 import { Homepage,AboutPage,BlogContentPage, PostsPages } from "./pages";
 import { Routes, Route } from 'react-router-dom';
-
 import ScrollToTop from "./utilities/ScrollToTop";
+
 
 export default function App() {
   const blog = [
@@ -45,9 +45,12 @@ export default function App() {
     },
 
   ]
- 
+   
+
   return (
     <div>
+     
+      
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<Homepage blog={blog}/>} />
@@ -55,6 +58,7 @@ export default function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/posts" element={<PostsPages blog={blog} />} />
       </Routes>
+      
     </div>
   )
 }
