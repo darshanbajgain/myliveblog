@@ -44,7 +44,7 @@ const Blogs = ({blog}) => {
         </div>
         <div className='w-full text-center mb-8 py-2'>
           <Link to='/posts'>
-            <button className='bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-6 rounded-full text-sm uppercase'>
+            <button className='bg-gray-300 hover:bg-gray-800 hover:text-gray-300 text-gray-800 border-2 font-bold py-4 px-6 rounded-full text-sm uppercase'>
               Load More
             </button>
           </Link>
