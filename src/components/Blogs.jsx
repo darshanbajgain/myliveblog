@@ -22,7 +22,7 @@ const Blogs = ({blog}) => {
 
   return (
 
-    <div className='w-ful dark:bg-gray-900 text-white p-6'>
+    <div className='w-ful dark:bg-gray-800 text-white p-6'>
       <div className='max-w-[1340px] mx-auto'>
 
         <div className='w-full pt-32 lg:mt-16 lg:pt-16 text-center mb-6'>

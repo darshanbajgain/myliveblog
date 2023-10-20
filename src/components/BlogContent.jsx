@@ -16,7 +16,7 @@ const BlogContent = ({ blog }) => {
   const markdownContent = useMarkdownLoader(markdownFile);
 
   return (
-    <div className="w-full py-16 px-8 relative bg-gray-900">
+    <div className="w-full py-16 px-8 relative bg-gray-800">
       <div className="max-w-[1340px] mx-auto px-1 pt-24">
         <div className="flex flex-col items-center">
           <img className='lg:max-w-[800px] sm:max-w-[600px] ss:min-w-[200px]  lg:px-2 py-4' src={selectedBlog.coverImg} alt={selectedBlog.title} />
