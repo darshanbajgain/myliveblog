@@ -6,11 +6,11 @@ Are you encountering issues with rendering Markdown content in your React app th
 ### Problem
 The Markdown content renders as it should be for bold and italic  text but it doesn't renders as it should be for headings or any other formats such as codeblocks, quotes etc.
 
-![renderproblemblog-1.jpg](/images/renderproblemblog-1.jpg)
+![renderproblemblog-1.jpg](../images/renderproblemblog-1.jpg)
 
 But after disabling Tailwind CSS, I reloaded and checked the app once more, and to my delight, I found that the markdown was successfully rendered as follows:
 
-![disabledTailwind.jpg](/images/Blog1TailwindDisable.png)
+![disabledTailwind.jpg](../images/Blog1TailwindDisable.png)
 
 ### Solution
 #### Tailwind CSS Typography Plugin:
@@ -18,11 +18,11 @@ One of the recommended solutions is to use the Tailwind CSS Typography plugin. T
 
 To set up the Tailwind CSS Typography plugin, follow these steps:
 - Install the plugin with 
-```
+```bash
 npm install -D @tailwindcss/typography.
 ```
 - Add it to your Tailwind CSS configuration in the plugins section.
-```
+```bash
 module.exports = {
   // ...
   plugins: [
@@ -37,7 +37,7 @@ module.exports = {
 
 Now, you can apply the prose class to your Markdown content. The Typography plugin will handle the styling, making your text look better while still allowing you to customize it further if needed.
 
-```
+```bash
 <ReactMarkdown className="prose">
   {/* Your Markdown content here */}
 </ReactMarkdown>
@@ -46,7 +46,7 @@ Now, you can apply the prose class to your Markdown content. The Typography plug
 
 Futther more if you want to style your Markdown content then you can add some porse styles in the React Markdown component as:
 
-```
+```bash
  <ReactMarkdown className="prose prose-headings:text-white prose-p:text-white">                      
   {/*  Your Markdwon content */}
   </ReactMarkdown>
