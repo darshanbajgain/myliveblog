@@ -3,7 +3,7 @@ import { Navbar, AboutContent, Footer } from "../components";
 
 const AboutPage = () => {
     return (
-        <div className="bg-gray-900 pb-2">
+        <div className="bg-gray-800 pb-2">
             <Navbar />
             <AboutContent />
             <Footer />
