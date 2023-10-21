@@ -62,14 +62,14 @@ export default function App() {
         <meta property="og:url" content="https://darshanblog.vercel.app/" />
         <meta property="og:title" content="Darshan's Blogs" />
         <meta property="og:description" content="Hi, Welcome to my blog, </DEV.DARSHAN>" />
-        <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+        <meta property="og:image" content="../images/devdarshan.png" />
 
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://darshanblog.vercel.app/" />
         <meta property="twitter:title" content="Darshan's Blogs" />
         <meta property="twitter:description" content="Hi, Welcome to my blog, </DEV.DARSHAN>" />
-        <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+        <meta property="twitter:image" content="../images/devdarshan.png" />
 
 
       </Helmet>
