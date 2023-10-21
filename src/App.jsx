@@ -52,29 +52,25 @@ export default function App() {
 
   return (
     <div>
-    
 
-        <Helmet>
-          <title>Darshan's Blog</title>
-            <meta name="description" content="Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;"/>
+      <Helmet>
+        <title>Darshan's Blog</title>
+        <meta name="description" content="Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;" />
+        <meta property="og:url" content="https://darshanblog.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Darshan's Blog" />
+        <meta property="og:description" content="Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;" />
+        <meta property="og:image" content="https://darshanblog.vercel.app/images/devdarshan.png" />
 
-            
-            <meta property="og:url" content="https://darshanblog.vercel.app/"/>
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="Darshan's Blog"/>
-            <meta property="og:description" content="Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;"/>
-            <meta property="og:image" content="https://darshanblog.vercel.app../images/devdarshan.png"/>
-
-          
-            <meta name="twitter:card" content="summary_large_image"/>
-            <meta property="twitter:domain" content="darshanblog.vercel.app"/>
-            <meta property="twitter:url" content="https://darshanblog.vercel.app/"/>
-            <meta name="twitter:title" content="Darshan's Blog"/>
-            <meta name="twitter:description" content="Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;"/>
-            <meta name="twitter:image" content="https://darshanblog.vercel.app../images/devdarshan.png"/>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="darshanblog.vercel.app" />
+        <meta property="twitter:url" content="https://darshanblog.vercel.app/" />
+        <meta name="twitter:title" content="Darshan's Blog" />
+        <meta name="twitter:description" content="Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;" />
+        <meta name="twitter:image" content="https://darshanblog.vercel.app/images/devdarshan.png" />
+      </Helmet>
 
 
-        </Helmet>
 
       <ScrollToTop />
       <Routes>
