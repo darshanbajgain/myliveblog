@@ -53,12 +53,25 @@ export default function App() {
   return (
     <div>
       <Helmet>
-        <title>Your Page Title</title>
+        <title>Darshan's Blogs</title>
+        <meta name="title" content="Darshan's Blogs" />
         <meta name="description" content="Hi, Welcome to my blog, </DEV.DARSHAN>" />
-        <meta property="og:title" content="</DEV.DARSHAN> Blog" />
+
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://darshanblog.vercel.app/" />
+        <meta property="og:title" content="Darshan's Blogs" />
         <meta property="og:description" content="Hi, Welcome to my blog, </DEV.DARSHAN>" />
-        <meta property="og:image" content="../images/devdarshan.png" />
-        <meta name="keywords" content="darshanblog.vercel.app, darshanblog, dev.darshan, devdarshan, DEV.DARSHAN, darshan bajgain, darshan bajgai" />
+        <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://darshanblog.vercel.app/" />
+        <meta property="twitter:title" content="Darshan's Blogs" />
+        <meta property="twitter:description" content="Hi, Welcome to my blog, </DEV.DARSHAN>" />
+        <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+
       </Helmet>
 
       <ScrollToTop />
