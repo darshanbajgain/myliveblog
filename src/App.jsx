@@ -53,23 +53,24 @@ export default function App() {
   return (
     <div>
       <Helmet>
-       
-        <title>DARSHAN.BLOG</title>
-        <meta name="title" content="DEV.DARSHAN Blog" />
-        <meta name="description" content="Hi, Welcome to my blog,</DEV.DARSHAN>" />
 
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://darshanblog.vercel.app/" />
-        <meta property="og:title" content="Darshan's Blog" />
-        <meta property="og:description" content="Hi, Welcome to my blog,</DEV.DARSHAN>" />
-        <meta property="og:image" content="../images/devdarshan.png" />
+        <Helmet>
+          <title>DARSHAN.BLOG</title>
+          <meta name="title" content="DEV.DARSHAN Blog" />
+          <meta name="description" content="Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;" />
 
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://darshanblog.vercel.app/" />
+          <meta property="og:title" content="Darshan's Blog" />
+          <meta property="og:description" content="Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;" />
+          <meta property="og:image" content="../images/devdarshan.png" />
 
-        <meta property="twitter:card" content="website" />
-        <meta property="twitter:url" content="https://darshanblog.vercel.app/" />
-        <meta property="twitter:title" content="Darshan's Blog" />
-        <meta property="twitter:description" content="Hi, Welcome to my blog,</DEV.DARSHAN>" />
-        <meta property="twitter:image" content="../images/devdarshan.png" />
+          <meta property="twitter:card" content="website" />
+          <meta property="twitter:url" content="https://darshanblog.vercel.app/" />
+          <meta property="twitter:title" content="Darshan's Blog" />
+          <meta property="twitter:description" content="Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;" />
+          <meta property="twitter:image" content="../images/devdarshan.png" />
+        </Helmet>
 
 
       </Helmet>
