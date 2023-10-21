@@ -1,6 +1,9 @@
-import { Homepage,AboutPage,BlogContentPage, PostsPages } from "./pages";
+import { Homepage, AboutPage, BlogContentPage, PostsPages } from "./pages";
 import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from "./utilities/ScrollToTop";
+import { Helmet } from 'react-helmet';
+
+
 
 
 export default function App() {
@@ -45,20 +48,27 @@ export default function App() {
     },
 
   ]
-   
+
 
   return (
     <div>
-     
-      
+      <Helmet>
+        <title>Your Page Title</title>
+        <meta name="description" content="Hi, Welcome to my blog, </DEV.DARSHAN>" />
+        <meta property="og:title" content="</DEV.DARSHAN> Blog" />
+        <meta property="og:description" content="Hi, Welcome to my blog, </DEV.DARSHAN>" />
+        <meta property="og:image" content="../images/devdarshan.png" />
+        <meta name="keywords" content="darshanblog.vercel.app, darshanblog, dev.darshan, devdarshan, DEV.DARSHAN, darshan bajgain, darshan bajgai" />
+      </Helmet>
+
       <ScrollToTop />
       <Routes>
-        <Route path='/' element={<Homepage blog={blog}/>} />
+        <Route path='/' element={<Homepage blog={blog} />} />
         <Route path='/blog/:id' element={<BlogContentPage blog={blog} />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/posts" element={<PostsPages blog={blog} />} />
       </Routes>
-      
+
     </div>
   )
 }
