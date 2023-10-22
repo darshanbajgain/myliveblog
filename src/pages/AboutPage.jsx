@@ -11,8 +11,8 @@ const AboutPage = () => {
         // Clean up the metadata when the component unmounts
         return () => {
           document.title = "Darshan's Blog";
-          document.querySelector('meta[name="description"]').setAttribute('content', "Welcome to Dev.Darshan");
-          document.querySelector('meta[property="og:image"]').setAttribute('content', "../images/devdarshan.png");
+          document.querySelector('meta[name="description"]').setAttribute('content', "Darshan's Blog");
+          
         };
       }, [])
     return (
