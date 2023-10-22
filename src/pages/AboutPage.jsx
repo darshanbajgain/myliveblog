@@ -2,19 +2,40 @@ import React, { useEffect } from 'react';
 import { Navbar, AboutContent, Footer } from "../components";
 
 const AboutPage = () => {
-    useEffect(() => {
-        // Set metadata for the About page
-        document.title = "About";
-        document.querySelector('meta[name="description"]').setAttribute('content', "HELLO, I AM DARSHAN BAJGAIN.");
-        document.querySelector('meta[property="og:image"]').setAttribute('content', "https://media.licdn.com/dms/image/D5603AQHiTbxjVI1AEQ/profile-displayphoto-shrink_800_800/0/1682674343890?e=1702512000&v=beta&t=W5e1A2B-E_AynuySpH0nzwKQbxUEY4ogC9swOA1K9ZU");
-    
-        // Clean up the metadata when the component unmounts
-        return () => {
-          document.title = "Darshan's Blog";
-          document.querySelector('meta[name="description"]').setAttribute('content', "Darshan's Blog");
-          
-        };
-      }, [])
+  useEffect(() => {
+    // Set metadata for the Postpage
+    document.title = "About";
+    document.querySelector('meta[name="description"]').setAttribute('content', "About this blog. Hi, I am Darshan Bajgain");
+    document.querySelector('meta[property="og:url"]').setAttribute('content', "https://darshanblog.vercel.app/about");
+    document.querySelector('meta[property="og:type"]').setAttribute('content', "website");
+    document.querySelector('meta[property="og:title"]').setAttribute('content', "Darshan's Blog- About");
+    document.querySelector('meta[property="og:description"]').setAttribute('content', "About this blog. Hi, I am Darshan Bajgain");
+    document.querySelector('meta[property="og:image"]').setAttribute('content', "https://darshanblog.vercel.app/images/devdarshan.png");
+    document.querySelector('meta[name="twitter:card"]').setAttribute('content', "summary_large_image");
+    document.querySelector('meta[property="twitter:domain"]').setAttribute('content', "darshanblog.vercel.app");
+    document.querySelector('meta[property="twitter:url"]').setAttribute('content', "https://darshanblog.vercel.app/about");
+    document.querySelector('meta[name="twitter:title"]').setAttribute('content', "Darshan's Blog- All Blog Posts");
+    document.querySelector('meta[name="twitter:description"]').setAttribute('content', "About this blog. Hi, I am Darshan Bajgain");
+    document.querySelector('meta[name="twitter:image"]').setAttribute('content', "https://darshanblog.vercel.app/images/devdarshan.png");
+
+    // Clean up the metadata when the component unmounts
+    return () => {
+        document.title ="Darshan's Blog";
+        document.querySelector('meta[name="description"]').setAttribute('content', "Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;");
+        document.querySelector('meta[property="og:url"]').setAttribute('content', "https://darshanblog.vercel.app/");
+        document.querySelector('meta[property="og:type"]').setAttribute('content', "website");
+        document.querySelector('meta[property="og:title"]').setAttribute('content', "Darshan's Blog");
+        document.querySelector('meta[property="og:description"]').setAttribute('content', "Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;");
+        document.querySelector('meta[property="og:image"]').setAttribute('content', "https://darshanblog.vercel.app/images/devdarshan.png");
+        document.querySelector('meta[name="twitter:card"]').setAttribute('content', "summary_large_image");
+        document.querySelector('meta[property="twitter:domain"]').setAttribute('content', "darshanblog.vercel.app");
+        document.querySelector('meta[property="twitter:url"]').setAttribute('content', "https://darshanblog.vercel.app/");
+        document.querySelector('meta[name="twitter:title"]').setAttribute('content', "Darshan's Blog");
+        document.querySelector('meta[name="twitter:description"]').setAttribute('content', "Hi, Welcome to my blog, &lt;/DEV.DARSHAN&gt;");
+        document.querySelector('meta[name="twitter:image"]').setAttribute('content', "https://darshanblog.vercel.app/images/devdarshan.png");    
+    };
+  }, []);
+
     return (
         <div className="home pb-2">
             <Navbar />
