@@ -1,12 +1,21 @@
-
+import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import useMarkdownLoader from '../utilities/useMarkdownLoader';
 import '../custom.css';
 
-
-
-
 const BlogContent = ({ selectedBlog }) => {
+
+  useEffect(() => {
+    if (selectedBlog) {
+      // Update metadata for the selected blog
+      document.title = selectedBlog.title;
+      document.querySelector('meta[name="description"]').setAttribute('content', selectedBlog.desc);
+      document.querySelector('meta[property="og:title"]').setAttribute('content', selectedBlog.title);
+      document.querySelector('meta[property="og:description"]').setAttribute('content', selectedBlog.desc);
+      document.querySelector('meta[property="og:image"]').setAttribute('content', selectedBlog.coverImg);
+      // You can add more metadata fields specific to the selected blog
+    }
+  }, [selectedBlog]);
 
   if (!selectedBlog) {
     return <div>Blog not found.</div>;
