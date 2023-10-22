@@ -1,0 +1,15 @@
+{
+    "routes": [
+      { "handle": "filesystem" },
+      {
+        "src": "/images/(.*)",
+        "headers": { "Cache-Control": "max-age=31536000, public" },
+        "dest": "/images/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  
