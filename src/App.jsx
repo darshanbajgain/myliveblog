@@ -1,7 +1,6 @@
 import { Homepage, AboutPage, BlogContentPage, PostsPages } from "./pages";
 import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from "./utilities/ScrollToTop";
-import { Helmet } from 'react-helmet';
 
 
 
