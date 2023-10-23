@@ -14,6 +14,9 @@ const BlogContent = ({ selectedBlog }) => {
       document.querySelector('meta[property="og:description"]').setAttribute('content', selectedBlog.desc);
       document.querySelector('meta[property="og:image"]').setAttribute('content', selectedBlog.coverImg);
       // You can add more metadata fields specific to the selected blog
+      console.log(selectedBlog.title)
+      console.log(selectedBlog.desc)
+      console.log(selectedBlog.coverImg)
     }
   }, [selectedBlog]);
 
