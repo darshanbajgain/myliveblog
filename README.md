@@ -6,7 +6,7 @@ After facing hosting and deployment challenges with my previous blog, which was 
 
 ## Live Preview
 
-Experience the dynamic blog app in action: [Live Preview](https://darshanblog.vercel.app/)
+Experience the dynamic blog app in action: [Live Preview](https://blogdarshan.netlify.app/)
 
 ## Key Features
 
