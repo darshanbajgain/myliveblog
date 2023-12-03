@@ -20,8 +20,7 @@ const AboutContent = () => {
                     </p>
                         <br />
                     <p className="text-lg px-4 text-center">
-                        I work as a Frontend Web Developer and specialize in HTML, CSS, Javascript, and React JS. Currently,
-                        I am expanding my skills to include backend technologies such as Java, and have experience working with databases like SQL and MongoDB.
+                       Final-Year BSc.CSIT Student | Frontend Web Developer | HTML, CSS, JavaScript, React JS | Exploring Java & Backend Tech | SQL Databases | SEO Integration for Enhanced UX
                     </p>
                 </div>
             </div>
